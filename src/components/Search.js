@@ -1,12 +1,13 @@
 import React from 'react'
 
-function Search(){
+function Search({handleChange, searchString}){
 
   return (
     <form>
-    <input type="text" />
+    <input type="text" onChange={event => handleChange(event.target.value)}/>
+    <h3>{searchString}</h3>
     </form>
   )
-
+}
 
 export default Search
