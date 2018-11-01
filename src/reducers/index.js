@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import placeholder from './placeholder';
+import searchInput from './searchInput';
+import searchResults from './searchResults';
+import searchCategory from './searchCategory';
 
 export default combineReducers({
-  placeholder
+  searchInput,
+  searchResults,
+  searchCategory,
 });
